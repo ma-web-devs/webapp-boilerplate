@@ -1,0 +1,20 @@
+/* Sample RGB use coolors.com to generate palettes */
+$color1: rgba(82, 65, 76, 1);
+$color2: rgba(89, 97, 87, 1);
+$color3: rgba(91, 140, 90, 1);
+$color4: rgba(207, 209, 134, 1);
+$color5: rgba(227, 101, 91, 1);
+
+
+$footerPadding: .9rem;
+$bodyPadding: 1.3rem;
+
+// Bootstrap Sizes (these aren't used in actual Bootstap files)
+// TODO: It would be good to get the bootstrap variables 
+// here as well
+$screen-lg-min: 1200px;
+$screen-md-max: 1199px;
+$screen-md-min: 992px;
+$screen-sm-max: 991px;
+$screen-sm-min: 768px;
+$screen-xs-max: 767px;

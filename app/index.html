@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MA Web Devs</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="scripts/prism/prism.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+
+  <!-- Firebase SDK Note: API Key may change without warning  -->
+  <!--                    if you wish to use this project on  -->
+  <!--                    your own, just replace the Firebase -->
+  <!--                    apiKey, authDomain, databaseURL and -->
+  <!--                    storageBucket to reflect your keys. -->
+  <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDiwWyP9vImoE3cd62lTYEKYsFbOBQ7PTE",
+      authDomain: "ma-web-developers.firebaseapp.com",
+      databaseURL: "https://ma-web-developers.firebaseio.com",
+      storageBucket: "",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- END - Firebase SDK - Don't include in build pipeline -->
+
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Rt-495</a></li>
+      <li><a href="#">Cape Code</a></li>
+    </ul>
+    <h3 class="text-muted">MA Web Devs</h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Kick MASS Boilerplate</h1>
+    <p class="lead">Dev something, Build life awesome.</p>
+    <p><a class="btn btn-lg btn-success" href="#">MWD</a></p>
+  </div>
+
+  <div class="row marketing">
+    <div class="col-lg-6">
+      <h4>MA Web Devs Boilerplate</h4>
+      <p>Hey there friendo, dive into some dev on the quick! Check out what's included below!</p>
+    </div>
+  </div>
+
+  <div class="prism">
+    <pre><code class="language-bash">$ git clone https://github.com/ma-web-devs/webapp-boilerplate.git
+$ npm i && bower i
+$ gulp serve   # to serve with live reload
+$ gulp build   # to output build</code></pre>
+  </div>
+  <div class="row">
+
+    <div class="learn-me-grid">
+
+      <div class="grid-item">
+        <h4>Sass</h4>
+        <a target="_blank" href="http://sass-lang.com/guide" class="learn-me-link">Learn me Sass</a>
+        <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. If you are working with MA Web Developers on a group project and don't know <code>.scss</code> don't worry. Just write regular CSS in the <code>styles/main.scss</code> file, it will run fine!
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Bootstrap</h4>
+        <a target="_blank" href="http://getbootstrap.com/getting-started/" class="learn-me-link">Learn me Bootstrap</a>
+        <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Modernizr</h4>
+        <a target="_blank" href="https://modernizr.com/docs" class="learn-me-link">Learn me Modernizr</a>
+        <p>Modernizr is a small piece of JavaScript code that automatically detects the availability of next-generation web technologies in your user's browsers. Rather than blacklisting entire ranges of browsers based on “UA sniffing,” Modernizr uses feature detection to allow you to easily tailor your user's experiences based on the actual capabilities of their browser.</p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Moment.js</h4>
+        <a target="_blank" href="http://momentjs.com/guides/" class="learn-me-link">Learn me Moment.js</a>
+        <p>Moment JS is open source date and time utils for the web. Parse, validate, manipulate, and display dates in JavaScript. Do you remember learning the JavaScript Date Object? Well forget it! Moment is your only time utility now.</p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Firebase Web</h4>
+        <a target="_blank" href="https://firebase.google.com/docs/web/setup" class="learn-me-link">Learn me Firebase</a>
+        <p>
+          Firebase is a mobile platform that helps you quickly develop high-quality apps, grow your user base, and earn more money. Firebase is made up of complementary features that you can mix-and-match to fit your needs.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>D3.js</h4>
+        <a target="_blank" href="https://d3js.org/" class="learn-me-link">Learn me D3.js</a>
+        <p>
+          D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Prism</h4>
+        <a target="_blank" href="http://prismjs.com/#basic-usage" class="learn-me-link">Learn me Prism</a>
+        <p>
+          Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It’s used in thousands of websites, including some of those you visit daily. <em>MA Web Developers template includes prism already loaded with a theme and many plugins. If you want to display code examples just wrap them in a <code>pre</code> tag and <code>code.language-xxxxx</code> tag. Most web languages are included in our custom build.</em>
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Masonry</h4>
+        <a target="_blank" href="http://masonry.desandro.com/#getting-started" class="learn-me-link">Learn me Masonry</a>
+        <p>
+          Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>jQuery with Validation plugin</h4>
+        <a target="_blank" href="https://api.jquery.com/" class="learn-me-link">Learn me jQuery</a>
+        <p>
+          jQuery is, well I think you know what jQuery is. The link above goes to the API docs if you need to look anything up.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Gulp</h4>
+        <a target="_blank" href="http://gulpjs.com/" class="learn-me-link">Learn me Gulp</a>
+        <p>
+          Gulp is a build tool. It makes development fast with tricks like live-reload, transpiling the latest JavaScript, it watches your entire project if you need it too and rebuilds on the fly. There are many plugins and gulp is JavaScript so it's written for developers like me and you. It can even cut your steak and tie your shoe laces. (ok, maybe it can't tie your shoes). Gulp is setup and ready to go in this project, run <code>gulp serve</code> to live reload as you work! <a target="_blank" href="https://github.com/osscafe/gulp-cheatsheet">Gulp cheatsheet</a>.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Bower</h4>
+        <a target="_blank" href="https://bower.io/#getting-started" class="learn-me-link">Learn me Bower</a>
+        <p>
+          <em>A package manager for the web</em>. Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you. To install a package to the boilerplate just run <code>bower i packagename</code> and if it can find it then it'll download the package. This project is already setup with all the packages listed above.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>NPM</h4>
+        <a target="_blank" href="" class="learn-me-link">Learn me NPM</a>
+        <p>
+          ...
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>MA Web Dev ♥ Yeoman ♥ Bower ♥ Bootstrap ♥ Sass ♥ Gulp ♥ Firebase ♥ Babel♥ and more...</p>
+</div>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/d3/d3.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
+<script src="/bower_components/masonry/dist/masonry.pkgd.js"></script>
+<script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+<script src="/bower_components/d3/d3.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+$icon-font-path: '../fonts/';
+
+// Our projects SCSS variables.
+@import "partials/variables";
+// Some Bootstrap normalization and boilerplate.
+@import "partials/normalization";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// Code Syntax Highlighter.
+@import "partials/prism";
+// The front-page masonry items widths.
+@import "partials/masonry-grid";
+// Main styles.
+@import "partials/main";
+
+// Write custom SCSS in the partials/_main.scss file,
+// create a new file, or write below!
+// Remember, @import "partials/demo" will be able to
+// locate "./partials/_demo.scss" or "./partials/demo.scss"
+//
