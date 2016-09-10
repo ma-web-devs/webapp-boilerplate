@@ -5,7 +5,9 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "d3": "^4.2.2",
-    "moment": "^2.14.1"
+    "moment": "^2.14.1",
+    "masonry": "^4.1.1",
+    "jquery-validation": "jquery.validate#^1.13.0"
   },
   "overrides": {
     "bootstrap-sass": {
