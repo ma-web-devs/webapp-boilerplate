@@ -3,7 +3,19 @@
 }
 .grid-item {
   box-sizing: border-box; 
-  width: 230px;
+  width: 320px;
   padding: 1rem 1rem 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .grid-item {
+    width: 325px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-item {
+    width: 100%;
+  }
 }
 

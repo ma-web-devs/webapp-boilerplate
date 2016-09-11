@@ -7,7 +7,8 @@
     "d3": "^4.2.2",
     "moment": "^2.14.1",
     "masonry": "^4.1.1",
-    "jquery-validation": "jquery.validate#^1.13.0"
+    "jquery-validation": "jquery.validate#^1.13.0",
+    "emojione": "^2.2.6"
   },
   "overrides": {
     "bootstrap-sass": {

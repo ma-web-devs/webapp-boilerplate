@@ -24,21 +24,21 @@
   <!-- endbuild -->
 
 
-  <!-- Firebase SDK Note: API Key may change without warning  -->
-  <!--                    if you wish to use this project on  -->
-  <!--                    your own, just replace the Firebase -->
-  <!--                    apiKey, authDomain, databaseURL and -->
-  <!--                    storageBucket to reflect your keys. -->
+  <!-- Firebase SDK Note: API Keys must be swapped for your own 
+       https://console.firebase.google.com/                       
+  -->
   <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
   <script>
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyDiwWyP9vImoE3cd62lTYEKYsFbOBQ7PTE",
-      authDomain: "ma-web-developers.firebaseapp.com",
-      databaseURL: "https://ma-web-developers.firebaseio.com",
+      apiKey: "{{FIREBASE_API_KEY}}",
+      authDomain: "{{YOUR_APP_NAME}}.firebaseapp.com",
+      databaseURL: "https://{{YOUR_APP_NAME}}.firebaseio.com",
       storageBucket: "",
     };
-    firebase.initializeApp(config);
+    if (config.apiKey !== '{{FIREBASE_API_KEY}}') {
+      firebase.initializeApp(config);
+    }
   </script>
   <!-- END - Firebase SDK - Don't include in build pipeline -->
 
@@ -68,12 +68,13 @@
     </div>
   </div>
 
-  <div class="prism">
-    <pre><code class="language-bash">$ git clone https://github.com/ma-web-devs/webapp-boilerplate.git
+  <div class="example install-example">
+<pre><code class="language-bash">$ git clone https://github.com/ma-web-devs/webapp-boilerplate.git
 $ npm i && bower i
 $ gulp serve     # to serve with live reload
 $ gulp build     # to output build</code></pre>
   </div>
+
   <div class="row">
 
     <div class="learn-me-grid">
@@ -171,10 +172,19 @@ $ gulp build     # to output build</code></pre>
       </div>
 
       <div class="grid-item">
-        <h4>NPM</h4>
-        <a target="_blank" href="" class="learn-me-link">Learn me NPM</a>
+        <h4>Emojione</h4>
+        <a target="_blank" href="https://github.com/Ranks/emojione" class="learn-me-link">Learn me Emojione</a>
         <p>
-          ...
+          Open your console! Notice the neat styling and emoji? Well the styling is all MA Web Devs but the Emoji is all Emojione! Emojione puts CC Emojis into your project easy peasy. Verizon uses Emojione so the faces smiling back at you might be familar.
+        </p>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>NPM</h4>
+        <a target="_blank" href="https://docs.npmjs.com/" class="learn-me-link">Learn me NPM</a>
+        <p>
+          NPM is the package manager that runs your life, installs packages like gulp which builds, serves and livereloads this webapp! "npm is the package manager for JavaScript. Find, share, and reuse packages of code from hundreds of thousands of developers — and assemble them in powerful new ways."
         </p>
         <div class="clearfix"></div>
       </div>
@@ -182,10 +192,42 @@ $ gulp build     # to output build</code></pre>
     </div>
   </div>
 
-</div>
+  <!-- Code Examples (short demos of libraries included) -->
+  <div class="row code-examples">
+
+    <div class="col-sm-12">
+
+    <!-- Firebase example panel -->
+    <div class="panel panel-default firebase-example">
+      <div class="panel-heading">
+        <h3 class="panel-title">Firebase Example</h3>
+      </div>
+      <div class="panel-body">
+      <pre><code class="language-javascript">// Add API Key to index.html, then reference database
+var database = firebase.database();
+
+// Save data like this:
+database.ref('users/' + userId)
+  .set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+
+// Read data like this:
+database.ref('post-comments/' + postId)
+  .on('child_added', function(data) {
+    addCommentElement(postElement, data.key, data.val().text, data.val().author);
+  });</code></pre>
+
+      </div>
+    </div> <!-- end: .panel.firebase-example -->
+  </div> <!-- end: .col-sm-12 -->
+
+</div> <!-- end: .row.code-examples -->
 
 <div class="footer">
-  <p>MA Web Dev ♥ Yeoman ♥ Bower ♥ Bootstrap ♥ Sass ♥ Gulp ♥ Firebase ♥ Babel♥ and more...</p>
+  <p>MA Web Dev's ♥ Team Yeoman ♥ Babel ♥ Bower ♥ Bootstrap ♥ Sass ♥ Gulp ♥ Firebase ♥ D3 ♥ jQuery{masonry,validate} ♥ and more...</p>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -206,6 +248,7 @@ $ gulp build     # to output build</code></pre>
 <script src="/bower_components/masonry/dist/masonry.pkgd.js"></script>
 <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
 <script src="/bower_components/d3/d3.js"></script>
+<script src="/bower_components/emojione/lib/js/emojione.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -224,7 +267,9 @@ $ gulp build     # to output build</code></pre>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 <!-- endbuild -->
 
+<!-- TODO: Bundle the modules so commonjs import/exports can be used. -->
 <!-- build:js scripts/main.js -->
+<script src="scripts/modules/style.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
 </body>

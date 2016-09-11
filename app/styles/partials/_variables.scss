@@ -1,13 +1,14 @@
 /* Sample RGB use coolors.com to generate palettes */
-$color1: rgba(82, 65, 76, 1);
-$color2: rgba(89, 97, 87, 1);
-$color3: rgba(91, 140, 90, 1);
-$color4: rgba(207, 209, 134, 1);
-$color5: rgba(227, 101, 91, 1);
+$color1: rgb(82, 65, 76);
+$color2: rgb(89, 97, 87);
+$color3: rgb(91, 140, 90);
+$color4: rgb(207, 209, 134);
+$color5: rgb(227, 101, 91);
 
 
-$footerPadding: .9rem;
-$bodyPadding: 1.3rem;
+$footer-padding: .9rem;
+$body-padding: 1.3rem;
+$font-size: 16px;
 
 // Bootstrap Sizes (these aren't used in actual Bootstap files)
 // TODO: It would be good to get the bootstrap variables 

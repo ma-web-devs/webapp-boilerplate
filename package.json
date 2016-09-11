@@ -28,7 +28,6 @@
     "url": "https://github.com/ma-web-devs/webapp-boilerplate/issues"
   },
   "homepage": "https://github.com/ma-web-devs/webapp-boilerplate#readme",
-
   "eslintConfig": {
     "env": {
       "es6": true,
@@ -47,6 +46,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.5.2",
     "browser-sync": "^2.2.1",
