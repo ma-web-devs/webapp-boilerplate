@@ -5,7 +5,7 @@ When it's time to build, you don't want to build the foundation... MA Web Devs B
 
 To download and install
 
-```sh
+```bash
 $ cd my/projects/folder
 $ git clone https://github.com/ma-web-devs/webapp-boilerplate.git
 $ cd webapp-boilerplate
@@ -13,12 +13,12 @@ $ bower install
 $ npm install
 ```
 Awesome! Everything should be installed now. The `app` folder is the working directory, this is where you should build your webpage or webapp. To develop with livereload on http://localhost:9000 simply open the command line and:
-```sh
+```bash
 $ gulp serve
 ```
 
 When your ready to show the world your work, simply build out the final project to the `dist` folder by running:
-```sh
+```bash
 $ gulp build
 ```
 
@@ -29,5 +29,6 @@ When your ready to build your final project, simply run `gulp build` and the fil
 
 #### Changelist
 
-> 09/10/2016 - Started building, added D3, Firebase, jQuery.validation, Masonry and Moment. Built the main project off of the Yeoman webapp starter and added new folder structure, comments and code along with the Masonry front page with links to all the learning resources for each library/tech.
-> 09/11/2016 - Added Emojione, fixed missing packages in bower. Started to add code examples to main page
+> **09/10/2016** - Started building, added D3, Firebase, jQuery.validation, Masonry and Moment. Built the main project off of the Yeoman webapp starter and added new folder structure, comments and code along with the Masonry front page with links to all the learning resources for each library/tech.
+
+> **09/11/2016** - Added Emojione, fixed missing packages in bower. Started to add code examples to main page
